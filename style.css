@@ -1,0 +1,94 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container {
+    /* margin: 5rem; */
+    background-color: white;
+    min-height: 100vh;
+    padding: 2rem;
+    background-color: rgb(220, 220, 211);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+h1 {
+    color: blue;
+    font-weight: 900;
+    margin: 10px;
+    font-size: 40px;
+}
+p {
+    font-size: 19px;
+    font-weight: 500;
+    width: 20.3rem;
+}
+a {
+    text-decoration: none;
+    /* text-align: center; */
+    font-size: 16px;
+    color: white;
+}
+a:hover {
+    color: aqua;
+}
+section {
+    margin-bottom: 2rem;
+    text-align: center;
+}
+form {
+    display: flex;
+    padding: 1rem;
+    min-width: 18rem;
+    background-color: white;
+    margin-left: 1rem;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 4px;
+}
+input[type=text], input[type=password] {
+    padding: 11px;
+    border: 1px solid;
+    width: 18rem;
+    margin-bottom: 1rem;
+}
+.login {
+    padding: 11px;
+    width: 18rem;
+    border-radius: 2px;
+    background-color: blue;
+    text-align: center;
+}
+.login + div {
+    text-align: center;
+    margin: 10px 0;
+    /* border-bottom: 2px solid; */
+}
+.login + div  a {
+    color: blue;
+}
+
+button {
+    width: 14rem;
+    padding: 9px;
+    background-color: rgb(20, 212, 20);
+    border: none;
+}
+ 
+@media (min-width: 715px) {
+    .container {
+        display: flex;
+
+        flex-direction: column;
+    }
+    .login-page {
+        display: flex;
+    }
+    section {
+        padding-left: 1rem;
+        text-align: left;
+        height: 15rem;
+    }
+}
